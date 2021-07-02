@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper_content_btns {
+  margin-top: 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
