@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'angular-ngrx';
+export class AppComponent implements OnInit, OnDestroy {
+  constructor() {}
+  stateCounter: number = 0;
+
+  increment(): void {
+    this.stateCounter++;
+  }
+
+  decrement(): void {
+    this.stateCounter--;
+  }
+
+  ngOnInit() {}
+
+  ngOnDestroy() {}
 }
